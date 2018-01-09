@@ -1,0 +1,535 @@
+// ---- HARDWARE
+.portfolio-hardware {
+	&:hover,
+	&.hovered {
+		.zoom-toggle {
+			@include opacity(1.0);
+			&:before,
+			&:after {
+				@include opacity(1.0);
+				}
+			}// .zoom-toggle
+		}// :hover, &.hovered
+	}// .portfolio-hardware
+
+.portfolio-image {
+	overflow: hidden;
+	display: block;
+	width: inherit;
+	height: auto;
+	&.zoomed {
+		@include transform-scaleXY(1.25,1.25);
+		@include box-shadow(0,4px,8px,4px,0.1);
+		@include round-all(2px);
+		background-color: $white;
+		.zoom-toggle {
+			@include opacity(1.0);
+			@include transform-scaleXY(0.75,0.75);
+			&:before {
+				@include opacity(1.0);
+				}
+			&:after {
+				@include opacity(0);
+				}
+			}// .zoom-toggle
+		}// &.zoomed
+
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+		}// <img>
+
+	.zoom-toggle {
+		cursor: pointer;
+		display: block;
+		position: absolute;
+			bottom: 0.6125em;
+			right: 0.5em;
+		color: transparent;
+		width: 2em;
+		height: 2em;
+		background-color: transparentize($black,0.5);
+		@include box-sizing(border-box);
+		@include round-all(1em);
+		@include opacity(0);
+		@include transition(all,75,ease-in-out);
+		&:hover {
+			background-color: transparentize($black,0.25);
+			&:before,
+			&:after {
+				background-color: $white;
+				}
+			}// :hover
+
+		// plus sign
+		&:before,
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+				top: 50%;
+				left: 50%;
+			background-color: tint($black,90%);
+			@include opacity(0);
+			@include transition(opacity,200,ease-in-out);
+			}// :before, :after;
+		&:before {
+			width: 1em;
+			height: 0.25em;
+			margin: -0.125em 0 0 -0.5em;
+			}// :before, :after
+		&:after {
+			width: 0.25em;
+			height: 1em;
+			margin: -0.5em 0 0 -0.125em;
+			}// :after
+		}// .zoom-toggle
+	}// .portfolio-image
+
+
+// ---- DEVICES
+.image-only {
+	margin: 0 auto;
+	& > .portfolio-hardware {
+		display: block;
+		width: 100%;
+		height: auto;
+		.portfolio-image {
+			.zoom-toggle {
+				display: none;
+				}// .zoom-toggle
+			}// .portfolio-image
+		}// & > .portfolio-hardware
+
+	&.zoomable {
+		z-index: 300;// move above project-sidebar
+		& > .portfolio-hardware {
+			.portfolio-image {
+				.zoom-toggle {
+					display: block;
+					}// .zoom-toggle
+				}// .portfolio-image
+			}// & > .portfolio-hardware
+		}// &.zoomable
+	}// .image-only
+
+.browser {
+	overflow: hidden;
+	position: relative;
+	width: 90%;
+	margin: auto 5%;
+	border-bottom: 1px solid tint($black,85%);
+	@include round(top,left,0.375em);
+	@include round(top,right,0.375em);
+	@include round(bottom,left,0.25em);
+	@include round(bottom,right,0.25em);
+
+	// Define ratio percentage for project wrappers
+	&:before {
+		content: "";
+		display: block;
+		padding-top: 75%;
+		background-color: tint($black,90%);
+		}// :before
+
+	// browser window
+	& > .portfolio-hardware {
+		position: absolute;
+		top: 2.25em;;
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-color: $white;
+		border: 1px solid tint($black,85%);
+		@include box-sizing(border-box);
+
+		// screenshot
+		.portfolio-image {
+			position: absolute;
+				top: 0;
+				left: 0;
+			.zoom-toggle {
+				display: none;
+				}// .zoom-toggle
+			}// .portfolio-image
+
+		// browser dots
+		&:before,
+		&:after,
+		img:after {
+			content: "";
+			display: block;
+			position: absolute;
+				top: -1.5em;
+				left: 0.9375em;
+			width: 0.75em;
+			height: 0.75em;
+			background-color: tint($black,75%);
+			@include round-all(0.375em);
+			}
+		&:after {
+			left: 2.1875em;
+			}
+		img:after {
+			left: 2.9375em;
+			}
+		}// & > .portfolio-hardware
+	}// .browser
+
+.phone-white {
+	position: relative;
+	width: 100%;
+	height: 29.4375em;
+	// phone
+	& > .portfolio-hardware {
+		position: absolute;
+			top: 0;
+			left: 50%;
+		width: 15em;
+		height: 29.4375em;
+		margin-left: -7.5em;
+		background-image: url("../images/hardware/phoneWhite.png");
+		background-position: top left;
+		background-repeat: no-repeat;
+		@include background-size(15em,29.4375em);
+
+		// screenshot
+		.portfolio-image {
+			position: absolute;
+				top: 3.625em;
+				left: 1.25em;
+			display: block;
+			width: 12.5em;
+			height: 22.1875em;
+			}// .portfolio-image
+		}// & > .portfolio-hardware
+	}// .phone-white
+
+.phone-black {
+	position: relative;
+	width: 100%;
+	height: 29.4375em;
+	// phone
+	& > .portfolio-hardware {
+		position: absolute;
+			top: 0;
+			left: 50%;
+		width: 15em;
+		height: 29.4375em;
+		margin-left: -7.5em;
+		background-image: url("../images/hardware/phoneBlack.png");
+		background-position: top left;
+		background-repeat: no-repeat;
+		@include background-size(15em,29.4375em);
+
+		// screenshot
+		.portfolio-image {
+			position: absolute;
+				top: 3.625em;
+				left: 1.25em;
+			display: block;
+			width: 12.5em;
+			height: 22.1875em;
+			}// .portfolio-image
+		}// & > .portfolio-hardware
+	}// .phone-black
+
+	// Short Phone
+	.phone-black,
+	.phone-white {
+		&.short-phone {
+			// phone
+			& > .portfolio-hardware {
+				background-image: url("../images/hardware/phoneBlackShort.png");
+				background-position: 0 0.5em;
+				// screenshot
+				.portfolio-image {
+					top: 5.8125em;
+					height: 18.75em;
+					}// .portfolio-image
+				}// & > .portfolio-hardware
+			}// &.short-phone
+		}// END Short Phone
+	.phone-black {
+		&.short-phone {
+			& > .portfolio-hardware {
+				background-image: url("../images/hardware/phoneBlackShort.png");
+				}// & > .portfolio-hardware
+			}// &.short-phone
+		}// .phone-black
+	.phone-white {
+		&.short-phone {
+			& > .portfolio-hardware {
+				background-image: url("../images/hardware/phoneWhiteShort.png");
+				}// & > .portfolio-hardware
+			}// &.short-phone
+		}// .phone-white
+
+// Tablet
+.tablet-white {
+	position: relative;
+	width: 100%;
+	height: 39.75em;
+	// phone
+	& > .portfolio-hardware {
+		position: absolute;
+			top: 0;
+			left: 50%;
+		width: 29em;
+		height: 39.75em;
+		margin-left: -14.5em;
+		background-image: url("../images/hardware/tabletWhite.png");
+		background-position: top left;
+		background-repeat: no-repeat;
+		@include background-size(29em,39.75em);
+
+		// screenshot
+		.portfolio-image {
+			position: absolute;
+				top: 3.875em;
+				left: 2.5em;
+			display: block;
+			width: 24em;
+			height: 32em;
+			}// .portfolio-image
+		}// & > .portfolio-hardware
+	}// .tablet-white
+
+.tablet-black {
+	position: relative;
+	width: 100%;
+	height: 39.75em;
+	// phone
+	& > .portfolio-hardware {
+		position: absolute;
+			top: 0;
+			left: 50%;
+		width: 29em;
+		height: 39.75em;
+		margin-left: -14.5em;
+		background-image: url("../images/hardware/tabletBlack.png");
+		background-position: top left;
+		background-repeat: no-repeat;
+		@include background-size(29em,39.75em);
+
+		// screenshot
+		.portfolio-image {
+			position: absolute;
+				top: 3.875em;
+				left: 2.5em;
+			display: block;
+			width: 24em;
+			height: 32em;
+			}// .portfolio-image
+		}// & > .portfolio-hardware
+	}// .tablet-black
+
+	// Narrow Tablets
+	.tablet-black {
+		&.narrow-tablet {
+			& > .portfolio-hardware {
+				background-image: url("../images/hardware/tabletBlackNarrow.png");
+				}// & > .portfolio-hardware
+			}// &.narrow-tablet
+		}// .tablet-black
+	.tablet-white {
+		&.narrow-tablet {
+			& > .portfolio-hardware {
+				background-image: url("../images/hardware/tabletWhiteNarrow.png");
+				}// & > .portfolio-hardware
+			}// &.narrow-tablet
+		}// .tablet-white
+	.tablet-black,
+	.tablet-white {
+		&.narrow-tablet {
+			// phone
+			& > .portfolio-hardware {
+				width: 26.875em;
+				height: 39.375em;
+				margin-left: -13.4375em;
+				@include background-size(26.875em,39.375em);
+
+				// screenshot
+				.portfolio-image {
+					top: 2.8125em;
+					left: 2.5em;
+					width: 21.875em;
+					height: 33.6875em;
+					}// .portfolio-image
+				}// & > .portfolio-hardware
+			}// &.narrow-tablet
+		}// END Narrow Tablets
+
+.laptop {
+	position: relative;
+	width: 100%;
+	height: 26.125em;
+	// laptop
+	& > .portfolio-hardware {
+		position: absolute;
+			top: 0;
+			left: 50%;
+		width: 47em;
+		height: 26.125em;
+		margin-left: -23.5em;
+		background-image: url("../images/hardware/laptop.png");
+		background-position: top left;
+		background-repeat: no-repeat;
+		@include background-size(47em,26.125em);
+
+		// screenshot
+		.portfolio-image {
+			position: absolute;
+				top: 2.5625em;
+				left: 7.3125em;
+			display: block;
+			width: 32.5em;
+			height: 19.375em;
+
+			// make .zoomed transform larger for laptop
+			&.zoomed {
+				@include transform-scaleXY(1.33,1.33);
+				}// &.zoomed
+			}// .portfolio-image
+		}// & > .portfolio-hardware
+	}// .laptop
+
+
+// % Hardware
+//.tablet-white-percent {
+//	position: relative;
+//	width: 100%;
+//	// phone
+//	& > .portfolio-hardware {
+//		position: absolute;
+//			top: 0;
+//			left: 0;
+//		width: 100%;
+//		height: 100%;
+//		background-image: url("../images/hardware/tabletWhite.png");
+//		background-position: top left;
+//		background-repeat: no-repeat;
+//		@include background-sizeNN(cover);
+//
+//		// screenshot
+//		.portfolio-image {
+//			position: absolute;
+//				top: 9.748427675%;
+//				left: 8.620689655%;
+//			display: block;
+//			width: 82.75862069%;
+//			height: 80.50314465%;
+//			}// .portfolio-image
+//		}// & > .portfolio-hardware
+//
+//	// Maintain height ratio
+//	&:after {
+//		content: "";
+//		display: block;
+//		padding-top: 137.06896552%;
+//		}// :after
+//	}// .tablet-white-percent
+//
+//.tablet-black-percent {
+//	position: relative;
+//	width: 100%;
+//	// phone
+//	& > .portfolio-hardware {
+//		position: absolute;
+//			top: 0;
+//			left: 0;
+//		width: 100%;
+//		height: 100%;
+//		background-image: url("../images/hardware/tabletBlack.png");
+//		background-position: top left;
+//		background-repeat: no-repeat;
+//		@include background-sizeNN(cover);
+//
+//		// screenshot
+//		.portfolio-image {
+//			position: absolute;
+//				top: 9.748427675%;
+//				left: 8.620689655%;
+//			display: block;
+//			width: 82.75862069%;
+//			height: 80.50314465%;
+//			}// .portfolio-image
+//		}// & > .portfolio-hardware
+//
+//	// Maintain height ratio
+//	&:after {
+//		content: "";
+//		display: block;
+//		padding-top: 137.06896552%;
+//		}// :after
+//	}// .tablet-black-percent
+//
+//.laptop-percent {
+//	position: relative;
+//	width: 100%;
+//	// laptop
+//	& > .portfolio-hardware {
+//		position: absolute;
+//			top: 0;
+//			left: 0;
+//		width: 100%;
+//		height: 100%;
+//		background-image: url("../images/hardware/laptop.png");
+//		background-position: top center;
+//		background-repeat: no-repeat;
+//		@include background-sizeNN(cover);
+//
+//		// screenshot
+//		.portfolio-image {
+//			position: absolute;
+//				top: 9.918660285%;
+//				left: 15.625531915%;
+//			display: block;
+//			width: 69%;
+//			height: 74.16267943%;
+//			}// .portfolio-image
+//		}// & > .portfolio-hardware
+//
+//	// Maintain height ratio
+//	&:after {
+//		content: "";
+//		display: block;
+//		padding-top: 55.58510638%;
+//		}// :after
+//	}// .laptop-percent
+
+
+// ---- ORIENTATION
+.landscape {
+	height: 29em;
+	& > .portfolio-hardware {
+		top: -5.375em;
+		@include transform-rotate(90deg);
+		.portfolio-image {
+			@include transform-rotate(-90deg);
+			height: 24em;
+			width: 32em;
+			top: 7.875em;
+			left: -1.5em;
+			}// .portfolio-image
+		}// .portfolio-hardware
+
+	// Narrow Tablet
+	&.narrow-tablet {
+		// phone
+		& > .portfolio-hardware {
+			@include transform-rotate(90deg);
+
+			// screenshot
+			.portfolio-image {
+				@include transform-rotate(-90deg);
+				top: 8.75em;
+				left: -3.5em;
+				width: 33.75em;
+				height: 21.8125em;
+				background-color: tint($black,15%);
+				}// .portfolio-image
+			}// & > .portfolio-hardware
+		}// &.narrow-tablet
+	}// .landscape

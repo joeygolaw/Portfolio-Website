@@ -1,0 +1,236 @@
+// ---------- 520px
+@media only screen and (max-width:520px) {
+
+	.project-wrapper {
+
+		// adjust ratio percentage for project wrappers
+		&:after {
+			padding-top: 75%;
+			}// :after
+
+		.covers {
+			// Individual Cover wrapper
+			.cover {
+				&.laptop {
+					& > a {
+						left: -10%;
+						}
+					}// .laptop
+				&.tablet-black,
+				&.tablet-white {
+					&.landscape, {
+						// adjust landscape tablet positioning
+						& > a {
+							left: 30%;
+							}// <a>
+						}// &.landscape
+					&.narrow-tablet {
+						// adjust landscape tablet positioning
+						& > a {
+							left: 10%;
+							margin-left: 0;
+							}// <a>
+						}// &.narrow-tablet
+					}// Tablets
+				&.illustration,
+				&.identity {
+					a {
+						img {
+							margin-top: 0;
+							}// <img>
+						}// <a>
+					}// &.illustration, identity
+				}// .cover
+			}// .covers
+		}// .project-wrapper
+
+	// ---- INFO
+	body#info {
+
+		.info-main {
+			.row-lining {
+				& > .column {
+					float: none;
+					width: 85% !important;
+					margin: 0 auto !important;
+					}// .column
+				}// .row-lining
+			}// .info-main
+
+		.info-image {
+			width: 85%;
+			}// .info-image
+
+		.info-contact {
+			width: 80%;
+			.contact-email {
+				float: left;
+				}// .contact-email
+			ul.contact-social {
+				float: right;
+				margin: 0;
+				}// .contact-email
+			}// .info-contact
+
+		.info-tagline {
+			margin-top: 1.5em;
+			text-align: center;
+			}// .info-tagline
+
+		.info-about {
+			text-align: center;
+			p {
+				width: 85%;
+				margin-left: auto;
+				margin-right: auto;
+				}// <p>
+			}// .info-about
+
+		.info-services {
+			width: 100%;
+			margin-top: 3em;
+
+			h2 {
+				margin-bottom: 1.75em;
+				}// <h2>
+
+			.service {
+				width: 100%;
+				margin: 0 0 2.5em 0;
+				h4,
+				p {
+					margin-bottom: 0.5em;
+					}// <h4>
+
+				&:last-of-type {
+					margin-top: 0;
+					}
+				}// .service
+			}// .info-services
+		}// body#info
+
+
+	// ---- Portfolio
+	.page-cover {
+		height: 21em;
+		.profileCover {
+			&.logo {
+				& > .portfolio-hardware {
+					.portfolio-image {
+						img {
+							width: 18.75em;
+							margin-top: -4.6875em;
+							margin-left: -9.375em;
+							}// <img>
+						}// .portfolio-image
+					}// & > .portfolio-hardware
+				}// &.logo
+			&.image-only {
+				& > .portfolio-hardware {
+					.portfolio-image {
+						img {
+							width: auto;
+							height: 122.5%;
+							}// <img>
+						}// .portfolio-image
+					}// & > .portfolio-hardware
+				}// &.image-only
+			&.laptop {
+				// push hardware down more
+				& > .portfolio-hardware {
+					left: auto;
+					right: 0;
+					margin-left: -50%;
+					}// & > .portfolio-hardware
+				}
+			&.tablet-black,
+			&.tablet-white {
+				// push hardware down more
+				&.landscape > .portfolio-hardware {
+					margin-left: -20%;
+					}// &.landscape > .portfolio-hardware
+				}
+			&.phone-black,
+			&.phone-white {
+				font-size: 75%;
+				}// phones
+			}// .profileCover
+		}// .page-cover
+
+	// Increase transparency of zoom toggle bg
+	.portfolio-image {
+		.zoom-toggle {
+			background-color: transparentize($black,0.66);
+			}// .zoom-toggle
+		}// .potrfolio-image
+
+	.page-portfolio {
+		&.scrolled {
+			.portfolio-nav {
+				right: 1em !important;
+				}// .portfolio-nav
+			}// &.scrolled
+
+		.portfolio-sidebar {
+			width: 100% !important;// necessary to override inline css set by js
+
+			h1 {
+				font-size: 1.5em;
+				}// <h1>
+			}// .portfolio-sidebar
+
+		// Adjust portfolio hardware sizes
+		.laptop {
+			height: 16.75em;
+
+			.portfolio-hardware {
+				font-size: 64%;
+				}// .portfolio-hardware
+			}// .laptop
+		.tablet-white,
+		.tablet-black {
+			font-size: 75%;
+			height: 39.75em;
+			&.landscape {
+				font-size: 62.5%;
+				height: 29em;
+				.portfolio-hardware {
+					.portfolio-image {
+						top: 7.9em;
+						left: -1.5em;
+						}// .portfolio-image
+					}// .portfolio-hardware
+
+				&.narrow-tablet {
+					font-size: 62%;
+					.portfolio-hardware {
+						.portfolio-image {
+							top: 8.8em;
+							left: -3.4em;
+							}// .portfolio-image
+						}// .portfolio-hardware
+					}// &.narrow-tablet
+				}// &.landscape
+			}
+		.phone-white,
+		.phone-black {
+			.portfolio-hardware {
+				}// .portfolio-hardware
+			}
+		}// .page-portfolio
+
+
+	#page-footer {
+		font-size: 0.8125em;
+		line-height: 150%;
+
+		#site-colophon {
+			.location-short {
+				display: inline;
+				}// .location-short
+			.location-long {
+				display: none;
+				}// .location-long
+			}// #site-colophon
+		}// #page-footer
+	}// 520px

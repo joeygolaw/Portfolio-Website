@@ -1,0 +1,13 @@
+Title: Brothers of the Beard
+----
+Tags: identity, interface, illustration
+----
+Client: (link: http://brothersofthebeard.tumblr.com/ text: Brothers of the Beard)
+----
+Year: 2012
+----
+Text: Brothers of the Beard was a promotional campaign created to help advertise Movember, the annual event involving the growing of moustaches during the month of November to raise awareness of men's health issues.
+
+I worked with them to create a visual identity and responsive website advertising the campaign. This included a myriad of “bearded” avatars that visitors could download and use as their own on social networks.
+----
+Cover-Color: #3CAAAF

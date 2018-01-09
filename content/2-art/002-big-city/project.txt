@@ -1,0 +1,13 @@
+Title: Big City
+----
+Tags: music, illustration
+----
+Year: 2009
+----
+Text: All tracks recorded between 2008-2009 at Third Story Vigil, Reno, NV. Rameses and Apprentice appear courtesy of Dorm Room Muzik. Bamboo, Metaphysical, Locus, Ron Darby, and Brian Vaden appear courtesy of themselves.
+----
+Cover-Color: #C73926
+----
+Music-Embed:
+
+<iframe style="border:0;width:66%;height:1000px;margin:3em 0 5em 16%;" src="http://bandcamp.com/EmbeddedPlayer/album=1871912404/size=large/bgcol=ffffff/linkcol=de270f/transparent=true/" seamless><a href="http://music.joeygolaw.com/album/big-city">Big City by Joey Golaw</a></iframe>

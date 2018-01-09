@@ -1,0 +1,13 @@
+Title: Lauren Randolph
+----
+Tags: identity, interface
+----
+Client: (link: http://photolauren.com/ text: Lauren Randolph)
+----
+Year: 2016
+----
+Text: Lauren Randolph is a creative portrait photographer based in Los Angeles, CA.
+
+I worked with her to create a visual identity and website for vibrant, colorful brand of portraiture and editorial photography work.
+----
+Cover-Color: #FBCC34

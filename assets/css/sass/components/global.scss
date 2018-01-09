@@ -1,0 +1,26 @@
+// -------- BODY
+html {
+	background-color: $body-bg-color;
+	}
+
+body {
+	overflow-x: hidden;
+	min-width: $page-min-width;
+	margin: 0 auto;
+	background-color: inherit;
+	@include body-font;
+	@include text-legibility;
+	}
+
+// Selection Color
+::selection {
+	background-color: tint($JG_keyColor, 50%);
+	color: $black;
+	}
+
+// Base link style
+a {
+	color: inherit;
+	text-decoration: none;
+ 	@include tap-highlight-color(transparentize($white,1.0));// Set iOS tap highligt
+	}// <a>

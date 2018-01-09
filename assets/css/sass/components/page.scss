@@ -1,0 +1,24 @@
+// -------- PAGE CONTENT
+#page-content {
+	width: 100%;
+	}// #page-content
+
+
+// -------- PAGE HEADER
+#page-header {
+	z-index: 1000;
+	@include unselectable;
+	@include transition((height,top),200,ease-in-out);
+	}// #page-header
+
+
+// -------- PAGE FOOTER
+#page-footer {
+	}// #page-footer
+
+
+// -------- PAGE MAIN
+#page-main {
+	overflow-x: hidden;
+	position: relative;
+	}// #page-main

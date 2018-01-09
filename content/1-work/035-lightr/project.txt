@@ -1,0 +1,15 @@
+Title: Lightr
+----
+Tags: identity, interface
+----
+Client: Lightr
+----
+Year: 2013
+----
+Text: Lightr is a platform for venues to create and manage branded mobile applications and event-specific networks.
+
+I worked with them to define the Lightr platform, and led the design for conceptual products including a consumer phone app and a tablet-based monitoring and content-creation app.
+
+The Lightr team was also in need of interactive presentation materials. I worked with them to create demo iPhone and iPad applications, and a website that allows users to view and interact with a limited simulation of the iPhone and iPad apps.
+----
+Cover-Color: #314550

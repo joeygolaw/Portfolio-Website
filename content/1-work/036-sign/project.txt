@@ -1,0 +1,13 @@
+Title: SIGN
+----
+Tags: identity, interface, illustration
+----
+Client: (link: http://obscuradigital.com/ text: Obscura Digital)
+----
+Year: 2012
+----
+Text: SIGN was a platform for displaying interactive content on touchscreen devices in retail stores.
+
+I worked with them to define the SIGN platform, led the design for conceptual products and services, and handled customization work for SIGN clients which included (link: http://www.vfc.com/brands text: VF Corporation) brands, (link: http://anheuser-busch.com/index.php/our-company/ text: Anheuser Busch), and (link: http://www.conair.com/corporate-cn-10.html text: Conair).
+----
+Cover-Color: #3CA79B

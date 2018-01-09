@@ -1,0 +1,13 @@
+Title: Samsara
+----
+Tags: interface, illustration, identity
+----
+Client: (link: http://www.samsara.com/ text: Samsara)
+----
+Year: 2017
+----
+Text: *Samsara builds internet-connected sensor systems that makes it easy and affordable to deploy sensors at any scale, fundamentally changing the way businesses interact with the physical world.*
+
+As Senior Designer at Samsara, my work was focused on expanding and refining the visual imprint of the company by guiding branding and marketing visuals for hardware and software products. My work at Samsara included web design & development, product renders & photography, branding & illustration—alongside package, hardware interface, and misc. collateral design.
+----
+Cover-Color: #FF5740

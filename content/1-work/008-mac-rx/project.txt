@@ -1,0 +1,13 @@
+Title: MacRx
+----
+Tags: identity
+----
+Client: Mark Romo
+----
+Year: 2010
+----
+Text: MacRx was started by Mark Romo, an excessively nice guy who harbored the hopes of opening a computer repair shop that would exclusively service Apple products.
+
+I worked with him to create an Apple-esque visual identity to represent his business and services.
+----
+Cover-Color: #555

@@ -1,0 +1,15 @@
+// -------- HOME
+body#home {
+	#page-header {
+		&.condensed {
+			#site-logo {
+				font-size: 2em;
+				margin-top: 0.625em;
+				}// #site-logo
+			}// &.condensed
+		}// #page-header
+
+	#page-main {
+		padding: ($padding-base * 5) 0;
+		}// #page-main
+	}// body#home

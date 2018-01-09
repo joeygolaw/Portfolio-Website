@@ -1,0 +1,13 @@
+Title: Chime
+----
+Tags: interface
+----
+Client: (link: http://www.brewchime.com/ text: Chime)
+----
+Year: 2016
+----
+Text: *A warm cup of chai is an important ritual, a delicious break from the day. With Chime you can brew authentic chai, effortlessly.*
+
+Chime is the first connected device for chai. I worked with them on refining their brand identity, art direction, and on the creation of their network of digital products—including a marketing website and the interface on the machine itself.
+----
+Cover-Color: #E70

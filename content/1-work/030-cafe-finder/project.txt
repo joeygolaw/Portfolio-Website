@@ -1,0 +1,13 @@
+Title: Cafe Finder
+----
+Tags: interface, illustration
+----
+Client: (link: http://wegeeks.us/ text: WeGeeks)
+----
+Year: 2012
+----
+Text: Cafe Finder is a coneptual app I worked on with WeGeeks, an engineering firm located in San Francisco, CA.
+
+The app aimed to assist users in finding the exact coffee shop they’re looking for based on their personal trends and preferences, giving fellow coffee-drinkers the information they need to navigate uncharted territory in search of caffeine and a wifi connection.
+----
+Cover-Color: #F07330

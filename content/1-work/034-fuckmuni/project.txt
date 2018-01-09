@@ -1,0 +1,13 @@
+Title: Muckfuni
+----
+Tags: identity
+----
+Client: Personal Project
+----
+Year: 2013
+----
+Text: Muckfuni is a brand and art project satirically critical of MUNI—the common-name of the (link: http://www.sfmta.com/ text: San Francisco Municipal Transportation Authority).
+
+I worked to create a visual identity that used MUNI's iconic logo to comment on it's history of poorly serving the residents of San Francisco. I also created the strategy for (link: https://twitter.com/muckfuni text: Muckfuni's Twitter account), which re-broadcasts the ample complaints SF residents post about MUNI and the SFMTA online.
+----
+Cover-Color: #A43146

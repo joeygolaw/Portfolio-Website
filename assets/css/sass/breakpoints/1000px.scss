@@ -1,0 +1,167 @@
+// ---------- 1000px
+@media only screen and (max-width:1000px) {
+
+	// ---- Header
+	#page-header {
+		#page-about {
+			margin-top: 1em;
+			font-size: 0.875em;
+			line-height: 112.5%;
+			}// #page-about
+
+		// Condensed Header
+		&.condensed {
+			#page-menu {
+				.main-menu {
+					.sub-menu {
+						font-size: 0.8em;
+						li .menu-item {
+							padding: 0.75em;
+							}// li .menu-item
+						}// .sub-menu
+					}// .main-menu
+				}// #page-menu
+			}// &.condensed
+		}// #page-header
+
+
+	// ---- Work / Art / Home
+	body#work,
+	body#art,
+	body#home {
+		#page-menu {
+			// Adjust nav columns
+			&.column {
+				width: 66.666666666%;
+				}// .column
+			}// #page-menu
+		}// body#work,body#home
+
+	// ---- Art
+	body#art {
+		#page-menu {
+			// Adjust nav columns
+			&.column {
+				width: 66.666666666%;
+				}// .column
+			}// #page-menu
+		}// body#art
+
+
+	// ---- Info
+	body#info {
+		.info-tagline {
+			padding-top: $padding-base;
+			}// .info-tagline
+
+		.info-services {
+			padding-top: 1em;
+			}// .info-services
+
+		.info-contact {
+			.contact-email {
+				float: none;
+				}// .contact-email
+			ul.contact-social {
+				float: none;
+				margin-top: 1em;
+				}// ul.contact-social
+			}// .info-contact
+		}// body#info
+
+
+	// ---- Project
+	.page-cover {
+		.profileCover {
+			&.image-only {
+				& > .portfolio-hardware {
+					.portfolio-image {
+						img {
+							top: 0;
+							}// <img>
+						}// .portfolio-image
+					}// & > .portfolio-hardware
+				}// &.image-only
+			}// .profileCover
+		}// .page-cover
+
+	.page-portfolio {
+		padding-top: ($padding-base * 5);
+		padding-bottom: ($padding-base * 5);
+
+		&.scrolled {
+			.portfolio-nav {
+				right: initial !important;// necessary to override inline css set by js
+				}// .portfolio-nav
+			}// &.scrolled
+
+		.portfolio-sidebar {
+			position: relative !important;// necessary to override inline css set by js
+				top: 0 !important;// necessary to override inline css set by js
+			float: none;
+			width: 75% !important;// necessary to override inline css set by js
+			margin: 0 auto ($padding-base * 4) auto !important;// necessary to override inline css set by js
+			padding: 0 0 0 5%;
+			background-color: transparent;
+
+			&:after {
+				content: "";
+				display: table;
+				clear: both;
+				}// :after
+
+			h1 {
+				float: left;
+				width: 70%;
+				font-size: 1.75em;
+				}// <h1>
+
+			.about {
+				float: left;
+				width: 65%;
+				padding-right: 5%;
+				p {
+					}// <p>
+				}// .about
+
+			
+			.meta {
+				float: right;
+				width: 30%;
+				margin: 0;
+				padding-bottom: 3em;
+				padding-left: 5%;
+				border-left: 1px solid tint($black,90%);
+				@include box-sizing(border-box);
+				}// .meta
+			}// .portfolio-sidebar
+
+		.portfolio-nav {
+			float: none;
+			position: absolute;
+				top: 0;
+				left: initial;
+				right: initial;// necessary to override inline css set by js
+			width: auto;
+			margin: 0;
+			}// .portfolio-nav
+
+		.portfolio-main {
+			left: 0 !important;// necessary to override inline css set by js
+			width: 100%;
+			}// .portfolio-main
+
+		// Adjust portfolio hardware sizes
+		.image-only {
+			width: 112%;
+			left: -6%;
+			.zoom-toggle {
+				display: none !important;
+				}// .zoom-toggle
+			}// .image-only
+		}// .page-portfolio
+
+	#page-footer {
+		font-size: 0.875em;
+		}// #page-footer
+	}// 1000px

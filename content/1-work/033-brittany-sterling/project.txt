@@ -1,0 +1,13 @@
+Title: Brittany Sterling Portfolio
+----
+Tags: interface
+----
+Client: (link: http://www.brittanysterling.com/about text: Brittany Sterling)
+----
+Year: 2014
+----
+Text: Brittany Sterling is a freelance artist and arts community advocate. Her work is focused on portrait painting, photo storytelling, and art workshops and events.
+
+I worked with her to create a portfolio website that showcased her strong ability to tell engaging visual narratives. The final website showcases her photography and artwork, and includes an online shop.
+----
+Cover-Color: #F0B4A0

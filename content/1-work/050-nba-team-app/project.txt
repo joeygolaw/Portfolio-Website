@@ -1,0 +1,15 @@
+Title: NBA Team App
+----
+Tags: interface
+----
+Client: (link: http://www.built.io/ text: Built.io)
+----
+Year: 2015
+----
+Text: *Built.io provides cloud and digital solutions to Fortune 500 companies and startups alike. Their products and services enable enterprises to accelerate mobile app development, simplify content management, and connect business across the Internet of Things.*
+
+I worked with them to conceptualize an app for NBA teams. We focused on creating a rich second-screen experience that allowed fans to get more out of their game and team experience.
+
+The concept app prioritized stats and content based on proximity to live games, and included an interactive ‘Refresh & Shoot’ feature that integrated a free-throw shooting game with the refresh of stats and content.
+----
+Cover-Color: #674A9C

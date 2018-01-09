@@ -1,0 +1,15 @@
+Title: La Societé Stella Artois
+----
+Tags: interface, illustration
+----
+Client: Stella Artois
+----
+Year: 2012
+----
+Text: Stella Artois was a client of SIGN, a platform for displaying interactive content on touchscreen devices in retail stores.
+
+They ran three campaigns using SIGN: La Societé Stella Artois, 1-800-Chalice, and The Ritual, all which featured different content and communications.
+
+I worked with them to help produce the interface and content for each campaign. Services included animation, product design, and supporting campaign communications.
+----
+Cover-Color: #E33C38

@@ -1,0 +1,13 @@
+Title: Amy Harrity Photo
+----
+Tags: interface
+----
+Client: (link: http://amyharrity.com/ text: Amy Harrity Photo)
+----
+Year: 2015
+----
+Text: Amy Harrity is a photographer whose work plays within the intersection of candid, honest portraiture, and staged, cinematic fashion spreads.
+
+I worked with her to create an original portfolio website that encapsulated her style and aesthetic, and allowed her total freedom to layout and sequence her photos. The final website is responsive, and built on (link: http://getkirby.com/ text: Kirby).
+----
+Cover-Color: #FDFDFD

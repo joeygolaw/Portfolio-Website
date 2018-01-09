@@ -1,0 +1,21 @@
+Title: Joey Golaw
+----
+Work-Title: Designer & Developer
+----
+Description: Designing my way toward a simpler life.
+----
+Copyright: © <span class="copyright">Copyright </span>(date: Year)
+----
+Colophon: Made by hand <span class="location-long">in San Franciso</span><span class="location-short">in SF</span>
+built on (link: http://getkirby.com/ text: Kirby title: Kirby CMS), set in (link: https://www.daltonmaag.com/library/effra text: Effra title: Dalton Maag | Effra).
+----
+Contact-Email: look@joeygolaw.com
+----
+Contact-Twitter: joeygolaw
+----
+
+Meta-Author: Joey Golaw
+----
+Meta-Keywords: design, designer, freelance, identity, interface, illustration, ui design, ux design, graphic design, website design, app design, lettering, art, san francisco, california
+----
+Meta-Copyright: (c) Copyright 1987-

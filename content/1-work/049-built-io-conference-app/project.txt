@@ -1,0 +1,13 @@
+Title: Built.io Conference App
+----
+Tags: interface
+----
+Client: (link: http://www.built.io/ text: Built.io)
+----
+Year: 2014-2016
+----
+Text: Built.io provides cloud and digital solutions to Fortune 500 companies and startups alike. Their products and services enable enterprises to accelerate mobile app development, simplify content management, and connect business across the Internet of Things.
+
+One of their flagship products, Conference App, lets attendees and organizers get more out of their conferences. I worked with them to define the Conference App applications, led the design for conceptual products and services, and handled customization work for Built.io clients, including (link: http://www.vmware.com/ text: VMware).
+----
+Cover-Color: #23BAB5

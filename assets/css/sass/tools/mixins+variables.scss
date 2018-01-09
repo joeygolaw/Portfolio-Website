@@ -1,0 +1,45 @@
+//----------- Colors
+$JG_keyColor: #F65;
+
+// Global
+$body-bg-color: #F5F5F5;
+$border-color: $black;
+
+// Forms
+$input-border-color: $black;
+$input-hover-base: blue;
+
+
+
+//----------- Structure
+// Spacing
+$padding-base: 10px;
+
+// Nav
+$header-height: 100px;
+
+// Page Content
+$page-min-width: 360px;
+$page-max-width: 1320px;
+
+// Grid
+$colMargin: 1%;
+
+
+//----------- Fonts
+@mixin body-font {
+	font-family: "Effra", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style: inherit;
+	}
+
+@mixin form-font {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style: inherit;
+	}
+
+
+
+//----------- Transitions
+@mixin transition-general($duration:100) {
+	@include transition(all, $duration, ease-in-out);
+	}

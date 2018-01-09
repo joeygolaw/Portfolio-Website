@@ -1,0 +1,13 @@
+Title: Chroma Chroma
+----
+Tags: interface, photos
+----
+Client: Personal Project
+----
+Year: 2014
+----
+Text: Chroma Chroma was the inaugural art party for Room and Makers, an artist collective and co-working space in San Francisco, CA. It featured new work by L.A. photographers Lauren Randolph and Jimmy Marble.
+
+I designed the campaign to promote the event, led the design and development of the event's animated webpage, and helped curate and install the show.
+----
+Cover-Color: #7C7

@@ -1,0 +1,13 @@
+Title: PartnerSlate
+----
+Tags: identity, interface, illustration
+----
+Client: (link: http://partnerslate.com/ text: PartnerSlate)
+----
+Year: 2014
+----
+Text: PartnerSlate is a service focused on connecting food brands with suppliers and manufacturers in the food industry.
+
+I worked with them to create a visual identity, explore and define the features and design of PartnerSlate's service, and led the design and development of their landing page and demo web service.
+----
+Cover-Color: #59C397

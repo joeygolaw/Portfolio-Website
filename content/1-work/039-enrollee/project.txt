@@ -1,0 +1,13 @@
+Title: Enrollee
+----
+Tags: interface
+----
+Client: (link: http://enroll.ee/ text: Enrollee)
+----
+Year: 2014
+----
+Text: Enrollee is a networking service that helps parents discover schools, and schools simplify the application and enrollment process.
+
+I worked with them to define the features and design of Enrollee's web service, and led the design and development of their landing page and demo web service.
+----
+Cover-Color: #0BF

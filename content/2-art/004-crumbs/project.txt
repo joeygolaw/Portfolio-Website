@@ -1,0 +1,13 @@
+Title: Crumbs
+----
+Tags: music, illustration
+----
+Year: 2010
+----
+Text: All tracks recorded between 2007-2009 at Third Story Vigil, Reno, NV.
+----
+Cover-Color: #FFF
+----
+Music-Embed:
+
+<iframe style="border:0;width:66%;height:1000px;margin:3em 0 5em 16%;" src="http://bandcamp.com/EmbeddedPlayer/album=1096710799/size=large/bgcol=ffffff/linkcol=333333/transparent=true/" seamless><a href="http://music.joeygolaw.com/album/crumbs">Crumbs by Joey Golaw</a></iframe>

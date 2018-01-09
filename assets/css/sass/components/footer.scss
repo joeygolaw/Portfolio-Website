@@ -1,0 +1,37 @@
+// -------- FOOTER
+#page-footer {
+	z-index: 1000;
+	position: relative;
+	padding: ($padding-base * 4);
+	color: tint($black, 66%);
+	font-size: 0.9375em;
+	line-height: 133.333333333%;
+	background-color: $white;
+	@include box-sizing(border-box);
+
+	p {
+		color: inherit;
+		}// <p>
+
+	a {
+		text-decoration: underline;
+		}// <a>
+
+	strong {
+		color: tint($black, 50%);
+		}// <strong>
+
+	#footer-title,
+	#site-contact {
+		white-space: nowrap;
+		}
+
+	#site-colophon {
+		padding-top: 0.642857em;
+		text-align: right;
+		font-size: 0.9375em;
+		.location-short {
+			display: none;
+			}// .location-short
+		}// #site-colophon
+	}// #page-footer

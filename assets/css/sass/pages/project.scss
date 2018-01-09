@@ -1,0 +1,403 @@
+// -------- PROJECT
+// Page Cover wrapper
+.page-cover {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 27.5em;
+
+	// Individual Cover wrapper
+	.profileCover {
+		position: absolute;
+			top: 0;
+			left: 0;
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+		@include transition(all,150,ease-in-out);
+
+		&.logo {
+			& > .portfolio-hardware {
+				.portfolio-image {
+					img {
+						position: absolute;
+							top: 50%;
+							left: 50%;
+						width: 22.5em;
+						margin-left: -11.25em;
+						margin-top: -5.625em;
+						}// <img>
+					}// .portfolio-image
+				}// & > .portfolio-hardware
+			}// &.logo
+
+		&.image-only {
+			& > .portfolio-hardware {
+				.portfolio-image {
+					img {
+						position: absolute;
+							top: -33.333333333%;
+							left: 0;
+						@include opacity(0.9);
+						}// <img>
+					}// .portfolio-image
+				}// & > .portfolio-hardware
+
+			// define vertical focus classes
+			&.top-focus {
+				& > .portfolio-hardware {
+					.portfolio-image {
+						img {
+							top: 0 !important;
+							bottom: auto !important;
+							}// <img>
+						}// .portfolio-image
+					}// & > .portfolio-hardware
+				}// &.top-focus
+
+			&.bot-focus {
+				& > .portfolio-hardware {
+					.portfolio-image {
+						img {
+							top: auto !important;
+							bottom: 0 !important;
+							}// <img>
+						}// .portfolio-image
+					}// & > .portfolio-hardware
+				}// &.bot-focus
+
+			// Box shadow colors
+			&.blk-glow {
+				& > .portfolio-hardware {
+					.portfolio-image img {
+						@include box-shadow-color(0,0,200px,100px,transparentize(tint($black,10%),0.5));
+						}// .portfolio-image <img>
+					}// & > .portfolio-hardware
+				}// &.blk-glow
+
+			&.wht-glow {
+				& > .portfolio-hardware {
+					.portfolio-image img {
+						@include box-shadow-color(0,0,200px,100px,transparentize($body-bg-color,0.5));
+						}// .portfolio-image <img>
+					}// & > .portfolio-hardware
+				}// &.wht-glow
+			}// &.image-only
+
+		&.laptop {
+			z-index: 1;
+			// laptop
+			& > .portfolio-hardware {
+				top: ($padding-base * 7);
+				width: 54.25em;
+				height: 30.25em;
+				margin-left: -27.125em;
+				@include opacity(0);// helps prevent flash of background-image
+				@include background-size(54.25em,30.25em);
+				@include animate(slideLaptop,1,320ms,40ms,ease-in,forwards);
+				// screenshot
+				.portfolio-image {
+					top: 2.9375em;
+					left: 8.4375em;
+					width: 37.5em;
+					height: 22.5em;
+					}// .portfolio-image
+				}// & > .portfolio-hardware
+			}// &.laptop
+
+		&.phone-black,
+		&.phone-white {
+			z-index: 3;
+			& > .portfolio-hardware {
+				top: ($padding-base * 3);
+				@include opacity(0);// helps prevent flash of background-image
+				@include animate(slidePhone,1,280ms,40ms,ease-in,forwards);
+				}// & > .portfolio-hardware
+			}
+
+		&.tablet-black,
+		&.tablet-white {
+			z-index: 2;
+			& > .portfolio-hardware {
+				top: ($padding-base * 5);
+				@include opacity(0);// helps prevent flash of background-image
+				@include animate(slidePhone,1,220ms,40ms,ease-in,forwards);
+				}// & > .portfolio-hardware
+
+			// Landscape
+			&.landscape {
+				& > .portfolio-hardware {
+					top: 0;
+					@include opacity(0);// helps prevent flash of background-image
+					@include animate(slideTabletLandscape,1,220ms,40ms,ease-in,forwards);
+					}// & > .portfolio-hardware
+				}// &.landscape
+			}// END Tablets
+		}// .profileCover
+	}// .page-cover
+
+
+// Page Portfolio wrapper
+.page-portfolio {
+	padding: ($padding-base * 5) ($padding-base * 4);
+
+	// Scrolled
+	&.scrolled {
+		.portfolio-sidebar,
+		.portfolio-nav {
+			position: fixed;
+				top: ($padding-base * 7);
+			}// .portfolio-sidebar
+
+		.portfolio-sidebar {
+			margin: 0;
+			}// .portfolio-sidebar
+
+		.portfolio-nav {
+			}// .portfolio-nav
+
+		.portfolio-main {
+			left: 25%;
+			}// .portfolio-main
+		}// .scrolled
+
+	.row-lining {
+		position: relative;
+		}// .row-lining
+
+	.row {
+		.column {
+			margin-bottom: ($padding-base * 6);
+			}// .column
+
+		hr {
+			width: 50%;
+			height: 1px;
+			margin-bottom: ($padding-base * 6);
+			border-style: solid;
+			border-width: 1px 0 0 0;
+			border-color: tint($black,75%);
+			background-color: transparent;
+			}// <hr>
+
+		&:last-of-type {
+			hr {
+				margin-bottom: 0;
+				border-color: transparent;
+				}// :after
+			}// :last-of-type
+		}// .row
+
+	.portfolio-main {
+		// remove floats from all columns
+		.column {
+			float: none;
+			}// .column
+		}// .portfolio-main
+
+	// Hardware
+	.phone-black,
+	.phone-white {
+		& > .portfolio-hardware {
+			.portfolio-image {
+				@include transition(all,120,ease-in);
+				&.zoomed {
+					@include transform-scaleXY(1.66,1.66);
+					}// :hover
+				}// & > .portfolio-hardware
+			}// .portfolio-image
+		}// END .phone-
+
+	.tablet-black,
+	.tablet-white,
+	.laptop {
+		& > .portfolio-hardware {
+			.portfolio-image {
+				@include transition(all,120,ease-in);
+				}// & > .portfolio-hardware
+			}// .portfolio-image
+		}// END .tablet-, .laptop-
+
+	.landscape {
+		& > .portfolio-hardware {
+			.portfolio-image {
+				&.zoomed {
+					@include transform-rotate-scale(-90deg,1.25);
+					}// &.zoomed
+				}// .portfolio-image
+			}// .portfolio-hardware
+		}// .landscape
+	}// .page-portfolio
+
+	.laptop {
+		& > .portfolio {
+			.portfolio-image {
+				&:before {
+					
+					}// :before
+				}// .portfolio-image
+			}// & > .portfolio
+		}// .laptop
+
+	// Portfolio Sidebar
+	.portfolio-sidebar {
+		z-index: 100;
+		padding: 0 ($padding-base * 4) 0 0;
+		@include gradient-lr($body-bg-color,75%,transparentize($body-bg-color,1),100%);
+		h1 {
+			margin-bottom: 1em;
+			color: $black;
+			font-size: 1.5em;
+			font-weight: 500;
+			line-height: 100%;
+			}// <h1>
+		.about {
+			p {
+				margin-bottom: 1em;
+				font-weight: 400;
+				color: tint($black,33%);
+				letter-spacing: 0.02em;
+				a {
+					text-decoration: underline;
+					}// <a>
+				}// <p>
+			}// .about
+		.meta {
+			margin: ($padding-base * 3) 0;
+			.tags {
+				margin-bottom: $padding-base;
+				color: tint($black,15%);
+				line-height: 133%;
+				text-transform: capitalize;
+				a {
+					display: inline-block;
+					&:hover {
+						color: $JG_keyColor;
+						&:before {
+							color: tint($black,15%);
+							}
+						}// &:hover
+					&:active {
+						color: $black;
+						}// &:active
+
+					// add comma b/t tags
+					&:before {
+						content: ", ";
+						display: inline-block;
+						margin-right: 0.1875em;
+						}// &:before
+
+					// remove comma from first <a>
+					&:first-of-type:before {
+						display: none;
+						}// &:first-of-type:before
+
+					// add ampersand :before last <a> onyl if adjacent to other <a>
+					& ~ a:last-of-type:before {
+						content: "& ";
+						margin: 0 0.375em 0 0.1875em;
+						}// &:last-of-type:before
+					}// <a>
+				}// .tags
+			p, li {
+				color: tint($black,50%);
+				font-size: 0.9375em;
+				font-weight: 500;
+				line-height: 1.2em;
+				a {
+					text-decoration: underline;
+					}// <a>
+				}// <p>, <li>
+			}// .meta
+		}// .portfolio-sidebar
+
+	// Portfolio Nav
+	.portfolio-nav {
+		z-index: 2000;
+		overflow: visible;
+		width: 5%;
+		margin-top: ($padding-base * 0.5);
+		margin-left: ($padding-base * 2);
+		white-space: nowrap;
+		@include unselectable;
+		@include transition(margin,200,ease-in-out);
+
+		a {
+			display: inline-block;
+			&.prev:hover {
+				span {
+					background-color: tint($black,75%);
+					&:after {
+						border-right-color: tint($black,75%);
+						}// &:after
+					}// <span>
+				}
+			&.next:hover {
+				span {
+					background-color: tint($black,75%);
+					&:after {
+						border-left-color: tint($black,75%);
+						}// &:after
+					}// <span>
+				}// &.next:hover
+
+			&.prev:active {
+				span {
+					background-color: tint($black,50%);
+					&:after {
+						border-right-color: tint($black,50%);
+						}// &:after
+					}// <span>
+				}
+			&.next:active {
+				span {
+					background-color: tint($black,50%);
+					&:after {
+						border-left-color: tint($black,50%);
+						}// &:after
+					}// <span>
+				}// &.next:active
+
+			span {
+				position: relative;
+				vertical-align: middle;
+				display: inline-block;
+				height: 0.75em;
+				width: 0.75em;
+				color: transparent;
+				background-color: tint($black,75%);
+				&:after {
+					content: "";
+					display: block;
+					position: absolute;
+						top: 50%;
+					border: solid transparent;
+					width: 0;
+					height: 0;
+					border-width: 0.75em;
+					margin-top: -0.75em;
+					}// &:after
+				}// <span>
+
+			&.prev {
+				padding: $padding-base ($padding-base * 0.75) $padding-base $padding-base;
+				span {
+					&:after {
+						right: 100%;
+						border-right-color: tint($black,75%);
+						}// &:after
+					}// <span>
+				}// .prev
+
+			&.next {
+				padding: $padding-base $padding-base $padding-base ($padding-base * 0.75);
+				span {
+					&:after {
+						left: 100%;
+						border-left-color: tint($black,75%);
+						}// &:after
+					}// <span>
+				}// .next
+			}// <a>
+		}// .portfolio-nav

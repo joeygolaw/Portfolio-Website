@@ -1,0 +1,13 @@
+Title: Sessions
+----
+Tags: music, illustration
+----
+Year: 2010
+----
+Text: All tracks recorded between 2007-2009 at Third Story Vigil, Reno, NV.
+----
+Cover-Color: #000
+----
+Music-Embed:
+
+<iframe style="border:0;width:66%;height:1000px;margin:3em 0 5em 16%;" src="http://bandcamp.com/EmbeddedPlayer/album=677502900/size=large/bgcol=333333/linkcol=ffffff/tracklist=true/transparent=true/" seamless><a href="http://music.joeygolaw.com/album/sessions">Sessions by Joey Golaw</a></iframe>

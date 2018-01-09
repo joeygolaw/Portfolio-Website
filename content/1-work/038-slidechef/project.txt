@@ -1,0 +1,13 @@
+Title: Slidechef
+----
+Tags: identity, interface
+----
+Client: (link: http://joinslidechef.com/ text: Slidechef Inc.)
+----
+Year: 2014
+----
+Text: Slidechef is a service focused on improving presentations and simplifying the software used to create them.
+
+I worked with them to create a visual identity, explore and define the features and design of Slidechef's web service, and led the design and development of their landing page and demo web service.
+----
+Cover-Color: #9D4D9C

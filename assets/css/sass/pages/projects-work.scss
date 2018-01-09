@@ -1,0 +1,16 @@
+// -------- WORK
+body#work {
+	#page-header {
+		&.condensed {
+			#site-logo {
+				font-size: 2em;
+				margin-top: 0.625em;
+				}// #site-logo
+			}// &.condensed
+		}// #page-header
+
+	#page-main {
+		top: 12em;// will be overridden by inlince CSS set by JS
+		padding: ($padding-base * 6) 0;
+		}// #page-main
+	}// body#work

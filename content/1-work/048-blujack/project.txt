@@ -1,0 +1,13 @@
+Title: Blujack
+----
+Tags: identity, interface, illustration
+----
+Client: (link: http://www.blujack.com/ text: Blujack)
+----
+Year: 2014
+----
+Text: Blujack was an itinerary service focused on easing the pains of organizing and coordinating group travel.
+
+I worked with them to explore and define the features and design of Blujacks's service and apps, led the design of their landing page, and created various communications to advertise, promote, and sell the service to both users and investors.
+----
+Cover-Color: #6CB6D6

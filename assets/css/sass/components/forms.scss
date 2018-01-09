@@ -1,0 +1,112 @@
+//---------- FORMS
+form {
+	font-size: 1em;
+	}// <form>
+
+
+// Input Base Styles
+input[type="text"],
+textarea,
+input[type="checkbox"],
+select,
+.dropdown-field {
+	border: 1px solid $input-border-color;
+	background-color: transparent;
+	word-wrap: break-word;
+	@include form-font;
+	@include text-legibility;// Mac-only font improvement
+	@include box-sizing(border-box);
+
+	&:disabled {
+		}
+	}// Input Base Styles
+
+
+// Text Inputs
+input[type="text"],
+textarea,
+select,
+.dropdown-field {
+	width: 100%; max-width: 100%;
+	color: $black;
+	background-color: $white;
+	@include input-placeholder-color(grey);
+
+	&:focus {
+		color: $black;
+		border-color: blue;
+		@include input-placeholder-color(transparent);
+		}// :focus
+
+	&:disabled {
+		color: grey;
+		border-color: grey;
+		@include input-placeholder-color(grey);
+
+		&:hover {
+			border-color: transparent;
+			}// :hover
+		}// :disabled
+	}// Text Inputs
+
+fieldset {
+	}// fieldset
+
+
+
+// Radios and Checkboxes
+fieldset.radios-checks {
+	margin-bottom: 1em;
+
+	// Checkbox/Radio inner wraps
+	& > label,
+	& > span {
+		display: inline-block;
+		width: 100%;
+		padding: 0;// remove excess label padding
+		}
+	}// fieldset.radios-checks
+
+
+
+//---------- Individual Field Styles
+// Text
+input[type="text"] {
+	}
+
+// Textarea
+textarea {
+	font-size: 0.875em;// 14px
+	}
+
+// Checkbox
+input[type="checkbox"] {
+	@include appearance(checkbox);
+
+	& + span {
+		}
+
+	// Checked
+	&:checked + span {
+		}
+
+	// Disabled
+	&:disabled + span {
+		}
+	}// Checkbox
+
+// Radios
+input[type="radio"] {
+	@include appearance(radio);
+
+	& + label {
+		}
+
+	// Checked
+	&:checked + label {
+		}
+
+	// Disabled
+	&:disabled + label {
+		}
+	}// Radios

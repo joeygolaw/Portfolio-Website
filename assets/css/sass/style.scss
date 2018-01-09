@@ -1,0 +1,49 @@
+
+
+
+// Theme Name: joeygolaw.com (2015)
+// Author: Joey Golaw
+// Version: 1.0
+
+
+
+// -------- NOTES
+// 1.0: Initial Build
+// — 
+
+
+
+/* -------- RESOURCES */
+@import "tools/html-reset-1.0.2";
+@import "tools/general-mixins+variables-1.0.3";
+@import "tools/mixins+variables";
+ @import "tools/animations";
+
+/* -------- BEGIN STYLESHEET */
+@import "components/global";
+@import "components/grid";
+@import "components/page";
+@import "components/type";
+@import "components/buttons";
+@import "components/forms";
+@import "components/labels";
+@import "components/nav";
+@import "components/footer";
+@import "components/hardware";
+
+/* -------- PAGES */
+@import "pages/projects";
+@import "pages/home";
+@import "pages/projects-work";
+@import "pages/projects-art";
+@import "pages/project";
+@import "pages/info";
+
+/* -------- BREAKPOINTS */
+@import "breakpoints/1400px";
+@import "breakpoints/1150px";
+@import "breakpoints/1000px";
+@import "breakpoints/750px";
+@import "breakpoints/640px";
+@import "breakpoints/520px";
+@import "breakpoints/440px";

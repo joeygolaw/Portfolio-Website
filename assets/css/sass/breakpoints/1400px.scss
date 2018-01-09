@@ -1,0 +1,19 @@
+// ---------- Over 1400px
+@media only screen and (min-width: 1400px) {
+	// ---- Project
+	.page-cover {
+		.profileCover {
+			&.image-only {
+
+				// Move pageCover image-only's up more, set max-width
+				& > .portfolio-hardware {
+					.portfolio-image img {
+//						left: 50%;
+//						max-width: 1440px;
+//						margin-left: -720px;
+						}// .portfolio-image <img>
+					}// & > .portfolio-hardware
+				}// &.image-only
+			}// .profileCover
+		}// .page-cover
+	}// 1400px

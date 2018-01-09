@@ -1,0 +1,18 @@
+// ---------- 440px
+@media only screen and (max-width:440px) {
+
+	// ---- Portfolio
+	.page-cover {
+		.profileCover {
+			&.image-only {
+				& > .portfolio-hardware {
+					.portfolio-image {
+						img {
+							margin-left: -5%;
+							}// <img>
+						}// .portfolio-image
+					}// & > .portfolio-hardware
+				}// &.image-only
+			}// .profileCover
+		}// .page-cover
+	}// 440px

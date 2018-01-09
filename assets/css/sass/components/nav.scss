@@ -1,0 +1,177 @@
+// -------- NAV
+#page-header {
+	position: absolute;
+	background-color: $white;
+	min-width: $page-min-width;
+	padding: 0 ($padding-base * 4);
+	@include box-sizing(border-box);
+ 	@include tap-highlight-color(transparentize($white,1.0));// Set iOS tap highligt
+
+	.row-lining {
+		max-width: $page-max-width;
+		margin: 0 auto;
+		@include box-sizing(border-box);
+		}// .row-lining
+
+	#site-logo {
+		margin-top: 1em;
+		margin-bottom: 0.25em;
+		font-size: 2em;
+		a {
+			vertical-align: bottom;
+			}// <a>
+		}// #site-logo
+
+	#page-about {
+		margin-bottom: 2em;
+		font-size: 0.9375em;
+		font-weight: 500;
+		color: tint($black,66%);
+		}// #page-about
+
+	#page-menu {
+		margin-top: 2em;
+		color: tint($black,75%);
+		white-space: nowrap;
+
+		// Set global <a> styles in .main-menu and .sub-menu
+		.menu-item {
+			cursor: pointer;
+			@include box-sizing(border-box);
+			@include transition((border,font,color),100,ease-in-out);
+			}// .menu-item
+
+		// Project filter buttons
+		#project-filters {
+			.filter-button {
+				border-bottom: 3px solid transparent;
+				// Current toggled button
+				&.toggled {
+					cursor: default;
+					position: relative;
+					color: $black;
+					&:before {
+						content: "";
+						display: inline-block;
+						position: absolute;
+							top: 50%;
+							left: 1px;
+						width: 0.222222222em;
+						height: 0.222222222em;
+						margin-top: -1px;
+						background-color: $black;
+						@include round-all(0.111111111em);
+						}// :before
+					}// .toggled
+				}// .filter-button
+			}// #project-filters
+
+		.main-menu {
+			width: 100%;
+			font-size: 1.25em;
+			font-weight: 900;
+			text-align: center;
+
+			& > li {
+				position: relative;
+				display: inline-block;
+				vertical-align: text-top;
+				text-align: left;
+				&.current {
+					& > .menu-item {
+						color: $black;
+						border-bottom: 3px solid tint($JG_keyColor,50%);
+						}// .menu-item
+					}// .current
+
+				.menu-item {
+					vertical-align: text-bottom;
+					display: inline-block;
+					padding: 0.8em;
+					&:hover {
+						color: tint($JG_keyColor,50%);
+						}// :hover
+					}// .menu-item
+				}// <li>
+
+			.sub-menu {
+				overflow: visible;
+				width: 100%;
+					max-width: 1em;
+				margin: 1em 0;
+				font-size: 0.9em;
+				font-weight: 500;
+				line-height: 112.5%;
+				li {
+					.menu-item {
+						vertical-align: text-bottom;
+						padding: 0 0.8em;
+						&:hover {
+							color: $black;
+							}// :hover
+						}// menu-item
+					}// <li>
+				}// .sub-menu
+			}// .main-menu
+		}// #page-menu
+
+
+	// Hidden
+	&.hidden {
+		}// &.hidden
+
+	// Condensed
+	&.condensed {
+		z-index: 9999;
+		position: fixed;
+			top: 0;
+			left: 0;
+		background-color: transparentize($white,0.01);
+		@include box-shadow(0,5px,20px,1px,0.04);
+		-webkit-transform: translate3d(0,0,0);// Safari bug fix for fixed positioning
+
+		// Hide .sub-menu and #page-about
+		#page-about {
+			display: none;
+			}
+
+		#site-logo {
+			margin: 0.125em 0;
+			}// #site-logo
+
+		#page-menu {
+			margin-top: 0.25em;
+
+			.main-menu {
+				li {
+					.menu-item {
+						padding: 0.6em;
+						}// .menu-item
+					}// <li>
+				}// .main-menu
+
+			.sub-menu {
+				margin: 0;
+				li {
+					display: inline-block;
+					.menu-item {
+						padding: 0.75em 0.5em;
+						}// .menu-item
+					}// <li>
+				}// .sub-menu
+
+			// Project filter buttons
+			#project-filters {
+				.filter-button {
+					// Current toggled button
+					&.toggled {
+						border-color: tint($JG_keyColor,50%);
+						&:before {
+							display: none;
+							}// :before
+						}// .toggled
+					}// .filter-button
+				}// #project-filters
+			}// #page-menu
+		}// &.condensed
+	}// #page-header

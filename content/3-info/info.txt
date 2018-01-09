@@ -1,0 +1,42 @@
+Title: Info
+----
+About: I’m an independent designer and developer based in San Francisco, CA. My work is focused on brand and digital product development. 
+
+My services are grounded in helping clients explore and envision their ideas, from ideation to execution.
+----
+
+Interface-Tagline: Decoding client’s ideas about how to organize and present their content, products, and services for the web.
+----
+Interface-About: Effective interfaces are clear and concise, tell engaging stories,  and adapt to today’s myriad of devices.
+----
+
+Identity-Tagline: Helping clients create distinct, lasting branding that symbolizes their vision, personality, and values.
+----
+Identity-About: Effective identity design communicates the personality and value of a brand, improves it’s recognition, and instills trust among it’s audience.
+----
+
+Illustration-Tagline: Collaborating with clients to artfully depict the seen and unseen through images.
+----
+Illustration-About: Effective illustration provides a visual narrative to words, and often distills complicated ideas and concepts into distinct images.
+----
+
+JG-Email: look@joeygolaw.com
+----
+JG-Twitter: joeygolaw
+----
+JG-Instagram: joeygolaw
+----
+JG-Tumblr: joeygolaw
+----
+
+Tools:
+				<ul class="tools">
+					<li><a href="http://www.adobe.com/products/illustrator.html" alt="Adobe Illustrator">Adobe Illustrator</a></li>
+					<li><a href="https://www.adobe.com/products/photoshop.html" alt="Adobe Photoshop">Adobe Photoshop</a></li>
+					<li><a href="https://github.com/textmate/textmate" alt="TextMate">TextMate</a></li>
+					<li><a href="http://www.google.com/chrome/" alt="Google Chrome">Google Chrome</a></li>
+					<li><a href="https://www.google.com/work/apps/business/" alt="Google Apps">Google Apps</a></li>
+					<li><a href="https://www.dropbox.com/" alt="Dropbox">Dropbox</a></li>
+					<li><a href="http://www.invisionapp.com/" title="InVision">InVision</a></li>
+					<li><a href="https://www.getharvest.com/" title="Harvest">Harvest</a></li>
+				</ul>

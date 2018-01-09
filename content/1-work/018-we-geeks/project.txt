@@ -1,0 +1,13 @@
+Title: WeGeeks
+----
+Tags: identity, interface, illustration
+----
+Client: (link: http://wegeeks.us/ text: WeGeeks)
+----
+Year: 2012
+----
+Text: WeGeeks is an engineering firm located in San Francisco, CA. I worked with them to clarify their visual identity.
+
+I worked on updating their visual identity, focusing on clarifying the original design concepts, and improving their brand personality and recognition.
+----
+Cover-Color: #97C93C

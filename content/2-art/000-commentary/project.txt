@@ -1,0 +1,13 @@
+Title: Commentary
+----
+Tags: music, illustration
+----
+Year: 2009
+----
+Text: All tracks recorded 2007 at Third Story Vigil, Reno, NV.
+----
+Cover-Color: #5C5478
+----
+Music-Embed:
+
+<iframe style="border:0;width:66%;height:1000px;margin:3em 0 5em 16%;" src="http://bandcamp.com/EmbeddedPlayer/album=2398360176/size=large/bgcol=333333/linkcol=ffffff/tracklist=true/transparent=true/" seamless><a href="http://music.joeygolaw.com/album/commentary">Commentary by Joey Golaw</a></iframe>

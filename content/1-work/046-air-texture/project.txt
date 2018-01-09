@@ -1,0 +1,15 @@
+Title: Air Texture
+----
+Tags: interface
+----
+Client: (link: http://stores.airtexture.com/ text: Air Texture)
+----
+Year: 2016
+----
+Text: Air Texture is an on-going ambient compilation series. Each installment features two separate, unmixed collections compiled by different musicians.
+
+The creative direction and artwork for the entire series is focused on architecture—both conceptual and existing structures, either artistic or functional in nature.
+
+I worked with Air Texture to create album artwork for (link: http://pitchfork.com/reviews/albums/16933-air-texture-vol-ii/ text: AIR002), (link: http://www.residentadvisor.net/review-view.aspx?id=13704 text: AIR003), (link: https://bleep.com/release/55081-various-artists-air-texture-vol-iv text: AIR004), and (link: https://boomkat.com/products/air-texture-volume-v-selected-by-spacetime-continuum-and-juju-jordash text: AIR005), and led the design and development of their website.
+----
+Cover-Color: #EEE

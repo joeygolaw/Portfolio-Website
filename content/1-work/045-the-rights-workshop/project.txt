@@ -1,0 +1,13 @@
+Title: The Rights Workshop
+----
+Tags: interface, illustration
+----
+Client: (link: http://www.rightsworkshop.com/ text: The Rights Workshop)
+----
+Year: 2015
+----
+Text: The Rights Workshop is a music supervision, licensing, and creative clearance company with locations in San Francisco and Los Angeles, CA. 
+
+I worked with them to redesign their marketing website, focusing on clearly conveying their licensing services, resources, and experience. The final website is responsive, and features subtle scrolling effects.
+----
+Cover-Color: #944

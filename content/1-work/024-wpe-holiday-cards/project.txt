@@ -1,0 +1,13 @@
+Title: WPE Holiday Card
+----
+Tags: illustration
+----
+Client: Water Planet Engineering
+----
+Year: 2012
+----
+Text: Water Planet Engineering is a water technology solutions provider based out of Los Angeles, CA. They focus on developing technologies for desalination and water reuse.
+
+I worked with them to create a holiday e-card that was whimsical, yet professional. The final design playfully spoke to the work they do to protect one of our planet's most precious resources.
+----
+Cover-Color: #4975FC

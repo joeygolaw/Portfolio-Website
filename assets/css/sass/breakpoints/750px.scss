@@ -1,0 +1,162 @@
+// ---------- 750px
+@media only screen and (max-width:750px) {
+
+	// ---- Work / Art / Home
+	body#work,
+	body#art,
+	body#home {
+		#page-main {
+			.row-lining {
+				max-width: 100%;
+				}// .row-lining
+
+			// Adjust columns
+			.column {
+				width: 100% !important;
+				margin-left: auto !important;
+				margin-right: auto !important;
+				}// .column
+			}// #page-main
+		}// body#work, body#home
+
+	.project-wrapper {
+		margin-bottom: ($padding-base * 13);
+		// Define ratio percentage for project wrappers
+		&:after {
+			padding-top: 52.5%;
+			}// :after;
+
+		// Project Covers wrapper
+		.covers {
+			// Individual Cover wrapper
+			.cover {
+				&.illustration,
+				&.identity {
+					& > a {
+						img {
+							margin-top: -12%;
+							}// <img>
+						}// & > a
+					}// .illustration, identity
+				&.interface {
+					height: 105%;
+					}// .interface
+				&.laptop {
+					& > a {
+						left: 50%;
+						margin-left: -23.5em;
+						}
+					}// .laptop
+				&.tablet-black,
+				&.tablet-white {
+					&.landscape,
+					&.narrow-tablet {
+						// center landscape tablets
+						& > a {
+							left: 50%;
+							margin-left: -13.4375em;
+							}// <a>
+						}// &.landscape, narrow-tablet
+					}// Tablets
+				}// .cover
+			}// .covers
+
+		// Move laptop down if "phone-" exists, put "phone-" on top
+		.cover.phone-black,
+		.cover.phone-white {
+			z-index: 10;
+			& ~ .cover.laptop {
+				top: 8%;
+				height: 92%;
+				}// & ~ .laptop
+			}
+		}// .project-wrapper
+
+	// ---- Info
+	body#info {
+		#page-main {
+			.row-lining {
+				// Adjust columns
+				& > .column:nth-child(1) {
+					width: 31.333333333%;
+					}
+				& > .column:nth-child(2) {
+					width: 60.666666666%;
+					margin: 0 0 0 4%;
+					}
+				& > .column:nth-child(3) {
+					width: 100%;
+					}
+				}// .row-lining
+			}// #page-main
+
+		.info-image {
+			margin-bottom: 1em;
+			}// .info-image
+
+		.info-tagline {
+			padding-top: 0;
+			}// .info-tagline
+
+		.info-services {
+			margin: 2.5em auto;
+			padding-top: 2.5em;
+			border-top: 1px solid tint($black,90%);
+
+			&:after {
+				content: "";
+				display: table;
+				clear: both;
+				}// :after
+
+			.service {
+				float: left;
+				width: 30.333333333%;
+				margin: 0 3% 0 0;
+				}// .service
+			}// .info-services
+
+		.info-contact {
+			text-align: center;
+			}// .info-contact
+		}// body#info
+
+	// ---- Project
+	.page-cover {
+		.profileCover {
+			&.image-only {
+				& > .portfolio-hardware {
+					.portfolio-image {
+						img {
+//							top: 0;
+//							height: 110%;
+//							width: auto;
+							}// <img>
+						}// .portfolio-image
+					}// & > .portfolio-hardware
+				}// &.image-only
+
+			&.laptop,
+			&.tablet-black,
+			&.tablet-white {
+				font-size: 87.5%;
+				}
+			}// .profileCover
+		}// .page-cover
+
+	.page-portfolio {
+		padding-left: 4%;
+		padding-right: 4%;
+
+		.portfolio-sidebar {
+			width: 100% !important;// necessary to override inline css set by js
+			padding-left: 6em;
+			}// .portfolio-sidebar
+
+		// Adjust portfolio hardware sizes
+		.image-only {
+			width: 110%;
+			left: -5%;
+			}// .image-only
+		}// .page-portfolio
+	}// 750px
