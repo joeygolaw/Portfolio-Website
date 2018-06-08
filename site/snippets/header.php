@@ -9,7 +9,23 @@
 	<meta name="viewport" content="user-scalable=no, width=device-width, maximum-scale=1" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 	<meta name="apple-mobile-web-app-capable" content="no" />
-	<meta name="description" content="<?php echo preg_replace( "/\r|\n/", "", $pages->find('info')->about()); ?>" />
+	<meta name="description" content="<?php
+		if ($page==$pages->find('work')) {
+			echo "I'm an independent designer and developer " . lcfirst ($pages->find('work')->about());
+			}
+		elseif ($page==$pages->find('art')) {
+			echo "I'm an artist and musician " . lcfirst ($pages->find('art')->about());
+			}
+		elseif ($page==$pages->find('info')) {
+			echo preg_replace( "/\r|\n/", "", $pages->find('info')->about());
+			}
+		elseif ($page->text() != "") {
+			echo truncate(html($page->text()));
+			}
+		else {
+			echo preg_replace( "/\r|\n/", "", $pages->find('info')->about());
+			};
+		?>" />
 	<meta name="keywords" content="<?php echo html($site->meta_keywords()) ?>" />
 	<meta name="copyright" content="<?php echo html($site->meta_copyright()).date('Y')." ".html($site->title().". All Rights Reserved."); ?>" />
 
@@ -29,7 +45,8 @@
 	<meta name="twitter:description" content="<?php
 
 		// Truncate function for Twitter cards
-		function truncate($string,$length=140,$append="…") {
+		function truncate($string,$length=280,$append="…") {
+			$string = preg_replace('/\*/', '', $string);
 			$string = trim($string);
 
 			if(strlen($string) > $length) {
@@ -41,8 +58,21 @@
 			return $string;
 			}
 
-		if ($page->text() != "") {echo truncate(html($page->text()));}
-		else {echo truncate(html($pages->find('info')->about()));}
+		if ($page==$pages->find('work')) {
+			echo truncate("I'm an independent designer and developer " . lcfirst ($pages->find('work')->about()));
+			}
+		elseif ($page==$pages->find('art')) {
+			echo truncate("I'm an artist and musician " . lcfirst ($pages->find('art')->about()));
+			}
+		elseif ($page==$pages->find('info')) {
+			echo preg_replace( "/\r|\n/", "", $pages->find('info')->about());
+			}
+		elseif ($page->text() != "") {
+			echo truncate(html($page->text()));
+			}
+		else {
+			echo preg_replace( "/\r|\n/", "", $pages->find('info')->about());
+			};
 
 			?>" />
 	<meta name="twitter:image" content="<?php
@@ -64,7 +94,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="http://www.joeygolaw.com/assets/images/favicon.ico" />
 </head>
 
-<body<?php 
+<body<?php
 	echo ($page->isHomePage()) ? ' id="home"' : '' ;
 	echo ($page==$pages->find('work')) ? ' id="work"' : '';
 	echo ($page==$pages->find('art')) ? ' id="art"' : '';
