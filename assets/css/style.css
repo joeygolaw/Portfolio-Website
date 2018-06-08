@@ -244,11 +244,11 @@ a {
     .row.margin-spaced .column.quarter {
       width: 23%; }
     .row.margin-spaced .column.third {
-      width: 31.33333%; }
+      width: 31.333333333%; }
     .row.margin-spaced .column.half {
       width: 48%; }
     .row.margin-spaced .column.col-23 {
-      width: 64.66667%; }
+      width: 64.666666666%; }
     .row.margin-spaced .column.col-34 {
       width: 73%; }
 
@@ -573,9 +573,9 @@ input[type="radio"] {
           height: 0.222222222em;
           margin-top: -1px;
           background-color: #000;
-          -webkit-border-radius: 0.11111em;
-          -moz-border-radius: 0.11111em;
-          border-radius: 0.11111em; }
+          -webkit-border-radius: 0.111111111em;
+          -moz-border-radius: 0.111111111em;
+          border-radius: 0.111111111em; }
     #page-header #page-menu .main-menu {
       width: 100%;
       font-size: 1.25em;
@@ -1410,188 +1410,6 @@ body#art #page-main {
   top: 12em;
   padding: 60px 0; }
 
-.page-cover {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  height: 27.5em; }
-  .page-cover .profileCover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    -webkit-transition-property: all;
-    -webkit-transition-duration: 150ms;
-    -webkit-transition-timing-function: ease-in-out;
-    -moz-transition-property: all;
-    -moz-transition-duration: 150ms;
-    -moz-transition-timing-function: ease-in-out;
-    -o-transition-property: all;
-    -o-transition-duration: 150ms;
-    -o-transition-timing-function: ease-in-out;
-    transition-property: all;
-    transition-duration: 150ms;
-    transition-timing-function: ease-in-out; }
-    .page-cover .profileCover.logo > .portfolio-hardware .portfolio-image img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 22.5em;
-      margin-left: -11.25em;
-      margin-top: -5.625em; }
-    .page-cover .profileCover.image-only > .portfolio-hardware .portfolio-image img {
-      position: absolute;
-      top: -33.333333333%;
-      left: 0;
-      opacity: 0.9;
-      filter: alpha(opacity=90); }
-    .page-cover .profileCover.image-only.top-focus > .portfolio-hardware .portfolio-image img {
-      top: 0 !important;
-      bottom: auto !important; }
-    .page-cover .profileCover.image-only.bot-focus > .portfolio-hardware .portfolio-image img {
-      top: auto !important;
-      bottom: 0 !important; }
-    .page-cover .profileCover.image-only.blk-glow > .portfolio-hardware .portfolio-image img {
-      -webkit-box-shadow: 0 0 200px 100px rgba(26, 26, 26, 0.5);
-      -moz-box-shadow: 0 0 200px 100px rgba(26, 26, 26, 0.5);
-      box-shadow: 0 0 200px 100px rgba(26, 26, 26, 0.5); }
-    .page-cover .profileCover.image-only.wht-glow > .portfolio-hardware .portfolio-image img {
-      -webkit-box-shadow: 0 0 200px 100px rgba(245, 245, 245, 0.5);
-      -moz-box-shadow: 0 0 200px 100px rgba(245, 245, 245, 0.5);
-      box-shadow: 0 0 200px 100px rgba(245, 245, 245, 0.5); }
-    .page-cover .profileCover.laptop {
-      z-index: 1; }
-      .page-cover .profileCover.laptop > .portfolio-hardware {
-        top: 70px;
-        width: 54.25em;
-        height: 30.25em;
-        margin-left: -27.125em;
-        opacity: 0;
-        filter: alpha(opacity=0);
-        -webkit-background-size: 54.25em 30.25em;
-        -moz-background-size: 54.25em 30.25em;
-        -o-background-size: 54.25em 30.25em;
-        background-size: 54.25em 30.25em;
-        -webkit-animation-name: slideLaptop;
-        -webkit-animation-duration: 320ms;
-        -webkit-animation-delay: 40ms;
-        -webkit-animation-iteration-count: 1;
-        -webkit-animation-timing-function: ease-in;
-        -webkit-animation-fill-mode: forwards;
-        -moz-animation-name: slideLaptop;
-        -moz-animation-duration: 320ms;
-        -moz-animation-delay: 40ms;
-        -moz-animation-iteration-count: 1;
-        -moz-animation-timing-function: ease-in;
-        -moz-animation-fill-mode: forwards;
-        -o-animation-name: slideLaptop;
-        -o-animation-duration: 320ms;
-        -o-animation-delay: 40ms;
-        -o-animation-iteration-count: 1;
-        -o-animation-timing-function: ease-in;
-        -o-animation-fill-mode: forwards;
-        animation-name: slideLaptop;
-        animation-duration: 320ms;
-        animation-delay: 40ms;
-        animation-iteration-count: 1;
-        animation-timing-function: ease-in;
-        animation-fill-mode: forwards; }
-        .page-cover .profileCover.laptop > .portfolio-hardware .portfolio-image {
-          top: 2.9375em;
-          left: 8.4375em;
-          width: 37.5em;
-          height: 22.5em; }
-    .page-cover .profileCover.phone-black, .page-cover .profileCover.phone-white {
-      z-index: 3; }
-      .page-cover .profileCover.phone-black > .portfolio-hardware, .page-cover .profileCover.phone-white > .portfolio-hardware {
-        top: 30px;
-        opacity: 0;
-        filter: alpha(opacity=0);
-        -webkit-animation-name: slidePhone;
-        -webkit-animation-duration: 280ms;
-        -webkit-animation-delay: 40ms;
-        -webkit-animation-iteration-count: 1;
-        -webkit-animation-timing-function: ease-in;
-        -webkit-animation-fill-mode: forwards;
-        -moz-animation-name: slidePhone;
-        -moz-animation-duration: 280ms;
-        -moz-animation-delay: 40ms;
-        -moz-animation-iteration-count: 1;
-        -moz-animation-timing-function: ease-in;
-        -moz-animation-fill-mode: forwards;
-        -o-animation-name: slidePhone;
-        -o-animation-duration: 280ms;
-        -o-animation-delay: 40ms;
-        -o-animation-iteration-count: 1;
-        -o-animation-timing-function: ease-in;
-        -o-animation-fill-mode: forwards;
-        animation-name: slidePhone;
-        animation-duration: 280ms;
-        animation-delay: 40ms;
-        animation-iteration-count: 1;
-        animation-timing-function: ease-in;
-        animation-fill-mode: forwards; }
-    .page-cover .profileCover.tablet-black, .page-cover .profileCover.tablet-white {
-      z-index: 2; }
-      .page-cover .profileCover.tablet-black > .portfolio-hardware, .page-cover .profileCover.tablet-white > .portfolio-hardware {
-        top: 50px;
-        opacity: 0;
-        filter: alpha(opacity=0);
-        -webkit-animation-name: slidePhone;
-        -webkit-animation-duration: 220ms;
-        -webkit-animation-delay: 40ms;
-        -webkit-animation-iteration-count: 1;
-        -webkit-animation-timing-function: ease-in;
-        -webkit-animation-fill-mode: forwards;
-        -moz-animation-name: slidePhone;
-        -moz-animation-duration: 220ms;
-        -moz-animation-delay: 40ms;
-        -moz-animation-iteration-count: 1;
-        -moz-animation-timing-function: ease-in;
-        -moz-animation-fill-mode: forwards;
-        -o-animation-name: slidePhone;
-        -o-animation-duration: 220ms;
-        -o-animation-delay: 40ms;
-        -o-animation-iteration-count: 1;
-        -o-animation-timing-function: ease-in;
-        -o-animation-fill-mode: forwards;
-        animation-name: slidePhone;
-        animation-duration: 220ms;
-        animation-delay: 40ms;
-        animation-iteration-count: 1;
-        animation-timing-function: ease-in;
-        animation-fill-mode: forwards; }
-      .page-cover .profileCover.tablet-black.landscape > .portfolio-hardware, .page-cover .profileCover.tablet-white.landscape > .portfolio-hardware {
-        top: 0;
-        opacity: 0;
-        filter: alpha(opacity=0);
-        -webkit-animation-name: slideTabletLandscape;
-        -webkit-animation-duration: 220ms;
-        -webkit-animation-delay: 40ms;
-        -webkit-animation-iteration-count: 1;
-        -webkit-animation-timing-function: ease-in;
-        -webkit-animation-fill-mode: forwards;
-        -moz-animation-name: slideTabletLandscape;
-        -moz-animation-duration: 220ms;
-        -moz-animation-delay: 40ms;
-        -moz-animation-iteration-count: 1;
-        -moz-animation-timing-function: ease-in;
-        -moz-animation-fill-mode: forwards;
-        -o-animation-name: slideTabletLandscape;
-        -o-animation-duration: 220ms;
-        -o-animation-delay: 40ms;
-        -o-animation-iteration-count: 1;
-        -o-animation-timing-function: ease-in;
-        -o-animation-fill-mode: forwards;
-        animation-name: slideTabletLandscape;
-        animation-duration: 220ms;
-        animation-delay: 40ms;
-        animation-iteration-count: 1;
-        animation-timing-function: ease-in;
-        animation-fill-mode: forwards; }
-
 .page-portfolio {
   padding: 50px 40px; }
   .page-portfolio.scrolled .portfolio-sidebar,
@@ -1742,21 +1560,21 @@ body#art #page-main {
   transition-timing-function: ease-in-out; }
   .portfolio-nav a {
     display: inline-block; }
-    .portfolio-nav a.prev:hover span {
-      background-color: #bfbfbf; }
-      .portfolio-nav a.prev:hover span:after {
-        border-right-color: #bfbfbf; }
     .portfolio-nav a.next:hover span {
       background-color: #bfbfbf; }
       .portfolio-nav a.next:hover span:after {
+        border-right-color: #bfbfbf; }
+    .portfolio-nav a.prev:hover span {
+      background-color: #bfbfbf; }
+      .portfolio-nav a.prev:hover span:after {
         border-left-color: #bfbfbf; }
-    .portfolio-nav a.prev:active span {
-      background-color: gray; }
-      .portfolio-nav a.prev:active span:after {
-        border-right-color: gray; }
     .portfolio-nav a.next:active span {
       background-color: gray; }
       .portfolio-nav a.next:active span:after {
+        border-right-color: gray; }
+    .portfolio-nav a.prev:active span {
+      background-color: gray; }
+      .portfolio-nav a.prev:active span:after {
         border-left-color: gray; }
     .portfolio-nav a span {
       position: relative;
@@ -1776,14 +1594,14 @@ body#art #page-main {
         height: 0;
         border-width: 0.75em;
         margin-top: -0.75em; }
-    .portfolio-nav a.prev {
+    .portfolio-nav a.next {
       padding: 10px 7.5px 10px 10px; }
-      .portfolio-nav a.prev span:after {
+      .portfolio-nav a.next span:after {
         right: 100%;
         border-right-color: #bfbfbf; }
-    .portfolio-nav a.next {
+    .portfolio-nav a.prev {
       padding: 10px 10px 10px 7.5px; }
-      .portfolio-nav a.next span:after {
+      .portfolio-nav a.prev span:after {
         left: 100%;
         border-left-color: #bfbfbf; }
 
@@ -1954,7 +1772,7 @@ body#info .info-services {
   body#work #page-main .row.margin-spaced .column.col-23,
   body#art #page-main .row.margin-spaced .column.col-23,
   body#home #page-main .row.margin-spaced .column.col-23 {
-    width: 64.66667%; }
+    width: 64.666666666%; }
   body#work #page-main .row.margin-spaced .column.col-34,
   body#art #page-main .row.margin-spaced .column.col-34,
   body#home #page-main .row.margin-spaced .column.col-34 {

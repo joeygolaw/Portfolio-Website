@@ -1,142 +1,4 @@
 // -------- PROJECT
-// Page Cover wrapper
-.page-cover {
-	overflow: hidden;
-	position: relative;
-	width: 100%;
-	height: 27.5em;
-
-	// Individual Cover wrapper
-	.profileCover {
-		position: absolute;
-			top: 0;
-			left: 0;
-		overflow: hidden;
-		width: 100%;
-		height: 100%;
-		@include transition(all,150,ease-in-out);
-
-		&.logo {
-			& > .portfolio-hardware {
-				.portfolio-image {
-					img {
-						position: absolute;
-							top: 50%;
-							left: 50%;
-						width: 22.5em;
-						margin-left: -11.25em;
-						margin-top: -5.625em;
-						}// <img>
-					}// .portfolio-image
-				}// & > .portfolio-hardware
-			}// &.logo
-
-		&.image-only {
-			& > .portfolio-hardware {
-				.portfolio-image {
-					img {
-						position: absolute;
-							top: -33.333333333%;
-							left: 0;
-						@include opacity(0.9);
-						}// <img>
-					}// .portfolio-image
-				}// & > .portfolio-hardware
-
-			// define vertical focus classes
-			&.top-focus {
-				& > .portfolio-hardware {
-					.portfolio-image {
-						img {
-							top: 0 !important;
-							bottom: auto !important;
-							}// <img>
-						}// .portfolio-image
-					}// & > .portfolio-hardware
-				}// &.top-focus
-
-			&.bot-focus {
-				& > .portfolio-hardware {
-					.portfolio-image {
-						img {
-							top: auto !important;
-							bottom: 0 !important;
-							}// <img>
-						}// .portfolio-image
-					}// & > .portfolio-hardware
-				}// &.bot-focus
-
-			// Box shadow colors
-			&.blk-glow {
-				& > .portfolio-hardware {
-					.portfolio-image img {
-						@include box-shadow-color(0,0,200px,100px,transparentize(tint($black,10%),0.5));
-						}// .portfolio-image <img>
-					}// & > .portfolio-hardware
-				}// &.blk-glow
-
-			&.wht-glow {
-				& > .portfolio-hardware {
-					.portfolio-image img {
-						@include box-shadow-color(0,0,200px,100px,transparentize($body-bg-color,0.5));
-						}// .portfolio-image <img>
-					}// & > .portfolio-hardware
-				}// &.wht-glow
-			}// &.image-only
-
-		&.laptop {
-			z-index: 1;
-			// laptop
-			& > .portfolio-hardware {
-				top: ($padding-base * 7);
-				width: 54.25em;
-				height: 30.25em;
-				margin-left: -27.125em;
-				@include opacity(0);// helps prevent flash of background-image
-				@include background-size(54.25em,30.25em);
-				@include animate(slideLaptop,1,320ms,40ms,ease-in,forwards);
-				// screenshot
-				.portfolio-image {
-					top: 2.9375em;
-					left: 8.4375em;
-					width: 37.5em;
-					height: 22.5em;
-					}// .portfolio-image
-				}// & > .portfolio-hardware
-			}// &.laptop
-
-		&.phone-black,
-		&.phone-white {
-			z-index: 3;
-			& > .portfolio-hardware {
-				top: ($padding-base * 3);
-				@include opacity(0);// helps prevent flash of background-image
-				@include animate(slidePhone,1,280ms,40ms,ease-in,forwards);
-				}// & > .portfolio-hardware
-			}
-
-		&.tablet-black,
-		&.tablet-white {
-			z-index: 2;
-			& > .portfolio-hardware {
-				top: ($padding-base * 5);
-				@include opacity(0);// helps prevent flash of background-image
-				@include animate(slidePhone,1,220ms,40ms,ease-in,forwards);
-				}// & > .portfolio-hardware
-
-			// Landscape
-			&.landscape {
-				& > .portfolio-hardware {
-					top: 0;
-					@include opacity(0);// helps prevent flash of background-image
-					@include animate(slideTabletLandscape,1,220ms,40ms,ease-in,forwards);
-					}// & > .portfolio-hardware
-				}// &.landscape
-			}// END Tablets
-		}// .profileCover
-	}// .page-cover
-
-
 // Page Portfolio wrapper
 .page-portfolio {
 	padding: ($padding-base * 5) ($padding-base * 4);
@@ -233,7 +95,7 @@
 		& > .portfolio {
 			.portfolio-image {
 				&:before {
-					
+
 					}// :before
 				}// .portfolio-image
 			}// & > .portfolio
@@ -325,7 +187,7 @@
 
 		a {
 			display: inline-block;
-			&.prev:hover {
+			&.next:hover {
 				span {
 					background-color: tint($black,75%);
 					&:after {
@@ -333,7 +195,7 @@
 						}// &:after
 					}// <span>
 				}
-			&.next:hover {
+			&.prev:hover {
 				span {
 					background-color: tint($black,75%);
 					&:after {
@@ -342,7 +204,7 @@
 					}// <span>
 				}// &.next:hover
 
-			&.prev:active {
+			&.next:active {
 				span {
 					background-color: tint($black,50%);
 					&:after {
@@ -350,7 +212,7 @@
 						}// &:after
 					}// <span>
 				}
-			&.next:active {
+			&.prev:active {
 				span {
 					background-color: tint($black,50%);
 					&:after {
@@ -380,7 +242,7 @@
 					}// &:after
 				}// <span>
 
-			&.prev {
+			&.next {
 				padding: $padding-base ($padding-base * 0.75) $padding-base $padding-base;
 				span {
 					&:after {
@@ -388,9 +250,9 @@
 						border-right-color: tint($black,75%);
 						}// &:after
 					}// <span>
-				}// .prev
+				}// .next-new
 
-			&.next {
+			&.prev {
 				padding: $padding-base $padding-base $padding-base ($padding-base * 0.75);
 				span {
 					&:after {

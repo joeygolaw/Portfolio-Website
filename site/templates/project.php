@@ -2,33 +2,13 @@
 <?php snippet('nav') ?>
 
 	<main id="page-main" class="row" role="main">
-		<div class="page-cover row" style="background-color:<?php echo $page->cover_color()->html() ?>;">
 <?php
 
+
 // Define Prefixes
-$cPrefix = "cover";
-$pPrefix = "profileCover";
 $projectImages = $page->images();
 $projectTags = $page->tags()->html();
-
-// Define project images if they exist
-if($projectImages->sortBy('sort','asc')) {
-
-	// Sort through images for filenames with "cover-" in them
-	foreach($projectImages as $pC) {
-
-		// Print cover HTML if filename doesn't contain "cover-" or "profileCover-"
-		if (strpos($pC->name(),$pPrefix) !== false) {
-
-			// Replace non-alpha-numeric characters w/ spaces, define classes
-			$classes = preg_replace('/^[^[a-zA-Z0-9]|&|]+$/', ' ', $pC->name());
-			?>
-			<div class="<?php echo $classes ?>"><div class="portfolio-hardware"><div class="portfolio-image"><img src="/kirby/assets/images/pixel.gif" data-original="<?php echo $pC->url() ?>" class="lazy-load" alt="<?php echo $page->title()->html() ?>"></div></div></div>
-<?php		}// END if
-		}// END foreach
-	}// END if
 ?>
-		</div><!--page-cover-->
 
 		<div class="page-portfolio">
 			<div class="row-lining">
@@ -69,12 +49,6 @@ if($projectImages->sortBy('sort','asc')) {
 	// Sort through images for filenames with "cover-" in them
 	foreach($projectImages as $c) {
 
-		// Do nothing if filename contains "profileCover-"
-		if (strpos($c->name(),$pPrefix) !== false) {}
-
-		// Print cover HTML if filename contains "cover-"
-		elseif (strpos($c->name(),$cPrefix) === false) {
-
 			// Replace non-alpha-numeric characters and ampersands w/ spaces, define classes
 			$classes = preg_replace('/^[^[a-zA-Z0-9]|&|]+$/', ' ', $c->name());
 			?>
@@ -89,15 +63,15 @@ if($projectImages->sortBy('sort','asc')) {
 						</div>
 						<hr>
 					</div>
-<?php		}// END if
+<?php
 		}// END foreach
 	}// END if
 ?>
 				</div><!--portfolio-main-->
 
 				<nav class="portfolio-nav column" role="navigation">
-					<?php if($prev = $page->prevVisible()): ?><a class="prev" href="<?php echo $prev->url() ?>" role="menuitem"><span>&larr;</span></a><?php endif ?>
 					<?php if($next = $page->nextVisible()): ?><a class="next" href="<?php echo $next->url() ?>" role="menuitem"><span>&rarr;</span></a><?php endif ?>
+					<?php if($prev = $page->prevVisible()): ?><a class="prev" href="<?php echo $prev->url() ?>" role="menuitem"><span>&larr;</span></a><?php endif ?>
 				</nav>
 			</div><!--row-lining-->
 		</div><!--page-portfolio-->
