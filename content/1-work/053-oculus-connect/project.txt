@@ -6,7 +6,7 @@ Client: (link: https://www.oculusconnect.com/ text: Facebook)
 ----
 Year: 2017
 ----
-Text: *Oculus is a Facebook company that develops virtual realtiy hardware and software. Oculus Connect is where engineers, designers, and creatives from around the world come together to push virtual reality forward.*
+Text: *Oculus is a Facebook company that develops virtual reality hardware and software. Oculus Connect is where engineers, designers, and creatives from around the world come together to push virtual reality forward.*
 
 As part of the Oculus Connect design team, my work was focused on conveying speaker's ideas and concepts in visually engaging ways like using animation to add life to diagrams. I led design for two Development track sessions, both of which are linked here.
 ----

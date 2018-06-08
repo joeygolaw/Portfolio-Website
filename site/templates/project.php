@@ -40,7 +40,7 @@ if($projectImages->sortBy('sort','asc')) {
 					</div>
 
 					<ul class="meta">
-						<li class="tags"><?php 
+						<li class="tags"><?php
 							if($projectTags) {
 								$splitTags = explode(", ", $projectTags);
 								foreach($splitTags as $pT) {

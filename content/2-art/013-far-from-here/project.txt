@@ -1,0 +1,13 @@
+Title: Far from here
+----
+Tags: music, illustration
+----
+Year: 2018
+----
+Text: All tracks recorded 2016-2018 at Lafayette Court, San Francisco, CA.
+----
+Cover-Color: #215550
+----
+Music-Embed:
+
+<iframe style="border:0;width:66%;height:1000px;margin:3em 0 5em 16%;" src="http://bandcamp.com/EmbeddedPlayer/album=677502900/size=large/bgcol=333333/linkcol=ffffff/tracklist=true/transparent=true/" seamless><a href="http://music.joeygolaw.com/album/sessions">Sessions by Joey Golaw</a></iframe>

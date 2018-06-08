@@ -1,0 +1,13 @@
+Title: Holman Prize
+----
+Tags: identity, illustration, interface
+----
+Client: (link: http://www.holmanprize.org/ text: Lighthouse for the Blind)
+----
+Year: 2018
+----
+Text: *Lighthouse for the Blind is a non-profit promoting equality and the self-reliance of people who are blind or visually impaired, through rehabilitation training and employment placement, among other relevant services.*
+
+Every year, the Holman Prize funds the projects of three ambitious blind people from around the world. I worked with Lighthouse for the Blind to develop an identity for the annual prize, and to implement that for the Holman Prize website.
+----
+Cover-Color: #c80000
