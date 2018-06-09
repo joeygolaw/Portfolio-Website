@@ -1,6 +1,6 @@
-Title: Far from here
+Title: farfromhere
 ----
-Tags: music, illustration
+Tags: music
 ----
 Year: 2018
 ----
@@ -10,4 +10,4 @@ Cover-Color: #215550
 ----
 Music-Embed:
 
-<iframe style="border:0;width:66%;height:1000px;margin:3em 0 5em 16%;" src="http://bandcamp.com/EmbeddedPlayer/album=677502900/size=large/bgcol=333333/linkcol=ffffff/tracklist=true/transparent=true/" seamless><a href="http://music.joeygolaw.com/album/sessions">Sessions by Joey Golaw</a></iframe>
+<iframe style="border:0;width:66%;height:1000px;margin:3em 0 5em 16%;" src="http://bandcamp.com/EmbeddedPlayer/album=3643534311/size=large/bgcol=333333/linkcol=ffffff/tracklist=true/transparent=true/" seamless><a href="http://music.joeygolaw.com/album/sessions">Sessions by Joey Golaw</a></iframe>
